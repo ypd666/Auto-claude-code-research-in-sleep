@@ -22,11 +22,11 @@
 
 ## 📢 最近更新
 
-- **2025-03-14** — 📱 [飞书集成](#-飞书lark-集成可选)：三种模式（关闭/推送/交互），实验完成、review 出分、checkpoint 审批均可手机收通知
-- **2025-03-13** — 🛑 Human-in-the-loop：所有工作流支持 `AUTO_PROCEED` 检查点，全自动或逐步审批
-- **2025-03-12** — 🔗 [Zotero](#-zotero-集成可选) + [Obsidian](#-obsidian-集成可选) + 本地 PDF + arXiv/Scholar：多源文献检索 + 跨模型新颖性验证
-- **2025-03-11** — 🚀 三大工作流端到端贯通：一句 prompt → 三大会风格论文。`/research-pipeline` 自动串联 idea 发现 → 自动 review → 论文写作
-- **2025-03-09** — 📝 `/paper-writing` 工作流：叙事报告 → 大纲 → 图表 → LaTeX → PDF → 两轮自动改进（4/10 → 8.5/10）
+- **2026-03-14** — 📱 [飞书集成](#-飞书lark-集成可选)：三种模式（关闭/推送/交互），实验完成、review 出分、checkpoint 审批均可手机收通知
+- **2026-03-13** — 🛑 Human-in-the-loop：所有工作流支持 `AUTO_PROCEED` 检查点，全自动或逐步审批
+- **2026-03-12** — 🔗 [Zotero](#-zotero-集成可选) + [Obsidian](#-obsidian-集成可选) + 本地 PDF + arXiv/Scholar：多源文献检索 + 跨模型新颖性验证
+- **2026-03-11** — 🚀 三大工作流端到端贯通：一句 prompt → 三大会风格论文。`/research-pipeline` 自动串联 idea 发现 → 自动 review → 论文写作
+- **2026-03-09** — 📝 `/paper-writing` 工作流：叙事报告 → 大纲 → 图表 → LaTeX → PDF → 两轮自动改进（4/10 → 8.5/10）
 
 ## 🚀 快速开始
 
@@ -817,7 +817,7 @@ claude
 
 ![GitHub stars](https://img.shields.io/github/stars/wanshuiyin/Auto-claude-code-research-in-sleep?style=social)
 
-[![Star History Chart](https://api.star-history.com/svg?repos=wanshuiyin/Auto-claude-code-research-in-sleep&type=Date&v=20260314)](https://star-history.com/#wanshuiyin/Auto-claude-code-research-in-sleep&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=wanshuiyin/Auto-claude-code-research-in-sleep&type=Date&v=20260314b)](https://star-history.com/#wanshuiyin/Auto-claude-code-research-in-sleep&Date)
 
 ## 🙏 致谢
 
