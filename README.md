@@ -814,8 +814,10 @@ Override inline: `/idea-discovery "topic" — pilot budget: 4h per idea, wait fo
 |----------|---------|-------------|
 | `PAPER_LIBRARY` | `papers/`, `literature/` | Local directories to scan for PDFs before searching online |
 | `MAX_LOCAL_PAPERS` | 20 | Max local PDFs to scan (first 3 pages each) |
+| `ARXIV_DOWNLOAD` | false | When `true`, download top relevant arXiv PDFs to PAPER_LIBRARY after search |
+| `ARXIV_MAX_DOWNLOAD` | 5 | Maximum number of PDFs to download when `ARXIV_DOWNLOAD = true` |
 
-Override inline: `/research-lit "topic" — paper library: ~/Zotero/storage/`
+Override inline: `/research-lit "topic" — paper library: ~/Zotero/storage/`, `/research-lit "topic" — arxiv download: true, max download: 10`
 
 ### General (all skills using Codex MCP)
 

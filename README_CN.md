@@ -730,8 +730,10 @@ Skills 就是普通的 Markdown 文件，fork 后随意改：
 |------|--------|------|
 | `PAPER_LIBRARY` | `papers/`, `literature/` | 本地论文目录，搜外部之前先扫这里的 PDF |
 | `MAX_LOCAL_PAPERS` | 20 | 最多扫描多少本地 PDF（每篇读前 3 页） |
+| `ARXIV_DOWNLOAD` | false | 设为 `true` 时，搜索后自动下载最相关的 arXiv PDF 到 PAPER_LIBRARY |
+| `ARXIV_MAX_DOWNLOAD` | 5 | `ARXIV_DOWNLOAD = true` 时最多下载的 PDF 数量 |
 
-行内覆盖：`/research-lit "方向" — paper library: ~/Zotero/storage/`
+行内覆盖：`/research-lit "方向" — paper library: ~/Zotero/storage/`、`/research-lit "方向" — arxiv download: true, max download: 10`
 
 ### 通用（所有使用 Codex MCP 的 skill）
 
