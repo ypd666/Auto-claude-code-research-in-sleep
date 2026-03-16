@@ -48,7 +48,7 @@ claude mcp add codex -s user -- codex mcp-server
 # 3. Use in Claude Code
 claude
 > /idea-discovery "your research direction"  # Workflow 1 — be specific! not "NLP" but "factorized gap in discrete diffusion LMs"
-> /auto-review-loop "your paper topic"       # Workflow 2: review → fix → re-review overnight
+> /auto-review-loop "your paper topic or scope"  # Workflow 2: review → fix → re-review overnight
 > /paper-writing "NARRATIVE_REPORT.md"       # Workflow 3: narrative → polished PDF
 > /research-pipeline "your research direction"  # Full pipeline: Workflow 1 → 2 → 3 end-to-end
 ```
@@ -253,6 +253,11 @@ The output is a ranked `IDEA_REPORT.md` with hypotheses, pilot results, reviewer
 **Skills involved:** `auto-review-loop` + `research-review` + `novelty-check` + `run-experiment` + `analyze-results` + `monitor-experiment`
 
 > 💡 **One-command shortcut:** `/auto-review-loop "your paper topic"` runs this entire workflow automatically.
+>
+> **What to pass as argument?** A short topic or scope is enough — the skill automatically reads your project's narrative docs (`NARRATIVE_REPORT.md`), memory files, experiment results, and prior reviews to build the full context for GPT-5.4. Examples:
+> - `/auto-review-loop "factorized gap in discrete diffusion LMs"` — broad topic, skill finds everything
+> - `/auto-review-loop "focus on Section 3-5, our CRF results are weak"` — targeted scope with hints
+> - `/auto-review-loop` — also works: skill reads project files and infers the topic
 
 **🛡️ Key safety features:**
 
