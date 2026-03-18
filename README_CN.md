@@ -28,15 +28,15 @@
 
 ## 📢 最近更新
 
+- **2026-03-19** — ![NEW](https://img.shields.io/badge/NEW-red?style=flat-square) 🔗 **工作流 1.5 升级** — `/experiment-bridge` 新增 **GPT-5.4 跨模型代码审查**，部署前自动 review（`code review: true` 默认开启）。计划 → 写代码 → 审查 → sanity → 部署 → 收集。📊 **W&B 修正** — 假 CLI 命令替换为真实 `wandb.Api()` Python 调用
 - **2026-03-18** — ![NEW](https://img.shields.io/badge/NEW-red?style=flat-square) 🎤 **[`paper-slides`](skills/paper-slides/SKILL.md)** — 会议演讲幻灯片（beamer → PDF + PPTX），含演讲稿、speaker notes、Q&A 预案。4 种类型（oral/spotlight/poster/invited）。社区贡献 by [@dengzhe-hou](https://github.com/dengzhe-hou)
 - **2026-03-18** — ![NEW](https://img.shields.io/badge/NEW-red?style=flat-square) 🔁 **[Codex + Claude 审稿 bridge](docs/CODEX_CLAUDE_REVIEW_GUIDE_CN.md)** — Codex 执行、Claude 审稿，通过本地 `claude-review` MCP bridge。社区贡献 by [@loujc](https://github.com/loujc)
 - **2026-03-18** — ![NEW](https://img.shields.io/badge/NEW-red?style=flat-square) 🖱️ **[Cursor 适配指南](docs/CURSOR_ADAPTATION.md)** — 在 [Cursor](https://www.cursor.com/) 中使用 ARIS skills，`@` 引用、MCP 配置、状态文件恢复。社区贡献 by [@YecanLee](https://github.com/YecanLee)
 - **2026-03-18** — ![NEW](https://img.shields.io/badge/NEW-red?style=flat-square) 🤖 **[Codex CLI 原生 skills](skills/skills-codex/)** — 完整 31 个 ARIS skill 的 Codex CLI 版本，用 `spawn_agent`。社区贡献 by [@Falling-Flower](https://github.com/Falling-Flower) & [@No-518](https://github.com/No-518)
-- **2026-03-18** — ![NEW](https://img.shields.io/badge/NEW-red?style=flat-square) 📝 **[`grant-proposal`](skills/grant-proposal/SKILL.md)** — 从研究 idea 自动生成结构化基金申请书。支持 9 个资助机构：科研費/KAKENHI（日本）、NSF（美国）、国自然/NSFC（含面上/青年/优青/杰青/海外优青/重点）、ERC（欧盟）、DFG、SNSF、ARC、NWO 及通用格式。串联 `/research-lit` → `/novelty-check` → `/research-review` → `/paper-illustration`。社区贡献 by [@dengzhe-hou](https://github.com/dengzhe-hou)
-- **2026-03-18** — ![NEW](https://img.shields.io/badge/NEW-red?style=flat-square) 🎨 **[`paper-illustration`](skills/paper-illustration/SKILL.md)** — AI 生成出版级架构图/方法示意图。Claude 规划 → Gemini 渲染 → 迭代优化至 ≥9 分。集成到工作流 3（`illustration: true`，需 `GEMINI_API_KEY`）。基于 [PaperBanana](https://github.com/dwzhu-pku/PaperBanana)。社区贡献 by [@Joseph-li343](https://github.com/Joseph-li343)
+- **2026-03-18** — ![NEW](https://img.shields.io/badge/NEW-red?style=flat-square) 📝 **[`grant-proposal`](skills/grant-proposal/SKILL.md)** — 从研究 idea 自动生成结构化基金申请书。支持 9 个资助机构。社区贡献 by [@dengzhe-hou](https://github.com/dengzhe-hou)
+- **2026-03-18** — ![NEW](https://img.shields.io/badge/NEW-red?style=flat-square) 🎨 **[`paper-illustration`](skills/paper-illustration/SKILL.md)** — AI 生成架构图（Gemini），集成到工作流 3。基于 [PaperBanana](https://github.com/dwzhu-pku/PaperBanana)。社区贡献 by [@Joseph-li343](https://github.com/Joseph-li343)
   <details><summary>预览 demo</summary><br><img src="assets/paper_illustration_demo.png" width="600" alt="paper-illustration 示例" /></details>
-- **2026-03-18** — ![NEW](https://img.shields.io/badge/NEW-red?style=flat-square) 🔗 **[工作流 1.5](skills/experiment-bridge/SKILL.md)** — 新增 `/experiment-bridge`：计划 → Claude 写代码 → **GPT-5.4 审查代码** → sanity check → 部署 → 收集。部署前跨模型代码审查（`code review: true` 默认开启）。📊 **W&B 集成** — `wandb: true` 时自动加 `wandb.log()`
-- **2026-03-18** — ![NEW](https://img.shields.io/badge/NEW-red?style=flat-square) 📊 **[CitationClaw](https://github.com/VisionXLab/CitationClaw)** — 引用影响力分析：论文标题 → 引用爬取、学者识别、分层统计、HTML 报告
+- **2026-03-18** — ![NEW](https://img.shields.io/badge/NEW-red?style=flat-square) 📊 **[CitationClaw](https://github.com/VisionXLab/CitationClaw)** — 引用影响力分析：论文标题 → 引用爬取、学者识别、HTML 报告
 - **2026-03-17** — ![NEW](https://img.shields.io/badge/NEW-red?style=flat-square) 🔧 **Git 代码同步** — `/run-experiment` 支持 `code_sync: git`（`git push` → `ssh "git pull"`），替代 rsync。**[NARRATIVE_REPORT 示例](docs/NARRATIVE_REPORT_EXAMPLE.md)** 展示工作流 3 输入格式。**参数透传** — 任何层级加 `— key: value` 自动传到下游 skill（[详情](#%EF%B8%8F-自定义)）。🆓 **[ModelScope 指南](docs/MODELSCOPE_GUIDE.md)** — 免费（2000 次/天），一个 Key，无自动化限制（[方案 E](#-替代模型组合)）
 <details>
 <summary>更早的更新（2026-03-12 — 2026-03-16）</summary>
