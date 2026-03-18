@@ -1099,6 +1099,14 @@ ARIS 的灵感来自：
 **社区**
 - [awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills) — Claude Code skills 精选列表（已收录）
 
+**特别感谢 — 平台适配**
+
+ARIS 能在这么多平台上运行，离不开这些贡献者：
+
+- 🤖 [@Falling-Flower](https://github.com/Falling-Flower) — 将全部 ARIS skills 适配为 [Codex CLI](https://github.com/openai/codex) 版本（`spawn_agent`）
+- 🔧 [@No-518](https://github.com/No-518) — 持续维护 Codex skill 集合，保持与最新更新同步
+- 🖱️ [@YecanLee](https://github.com/YecanLee) — 编写 [Cursor 适配指南](docs/CURSOR_ADAPTATION.md)及本地 GPU 配置文档
+
 ## License
 
 MIT

@@ -1203,6 +1203,14 @@ This project builds on and integrates with many excellent open-source projects:
 **Community**
 - [awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills) — Curated list of Claude Code skills (featured)
 
+**Special Thanks — Platform Adaptation**
+
+ARIS wouldn't run on so many platforms without these contributors:
+
+- 🤖 [@Falling-Flower](https://github.com/Falling-Flower) — adapted all ARIS skills for [Codex CLI](https://github.com/openai/codex) using `spawn_agent`
+- 🔧 [@No-518](https://github.com/No-518) — ongoing maintenance of the Codex skill set, keeping parity with latest updates
+- 🖱️ [@YecanLee](https://github.com/YecanLee) — wrote the [Cursor adaptation guide](docs/CURSOR_ADAPTATION.md) and local GPU setup docs
+
 ## License
 
 MIT
